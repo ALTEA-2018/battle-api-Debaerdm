@@ -20,8 +20,11 @@ public class BattleController {
     }
 
     @PostMapping(value = "/battles", consumes = "application/json", produces = "application/json")
-    public Battle battles(@RequestBody Fight fight) {
-        return this.battleService.createBattle(fight.getTrainer(), fight.getOpponent());
+    public ResponseEntity<Battle> battles(@RequestBody Fight fight) {
+        if (fight.getOpponent().equals(fight.getTrainer())) {
+            return ResponseEntity.badRequest().build();
+        }
+        return ResponseEntity.ok(this.battleService.createBattle(fight.getTrainer(), fight.getOpponent()));
     }
 
     @GetMapping("/battles")
