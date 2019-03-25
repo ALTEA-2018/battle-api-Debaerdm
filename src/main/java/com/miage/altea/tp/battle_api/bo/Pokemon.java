@@ -1,7 +1,5 @@
 package com.miage.altea.tp.battle_api.bo;
 
-import javax.persistence.*;
-
 public class Pokemon {
 
     public int id;
