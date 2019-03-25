@@ -14,10 +14,10 @@ import java.util.List;
 @Configuration
 public class RestConfiguration {
 
-    @Value("${trainers.user.name}")
+    @Value("${trainers.service.user.name}")
     private String username;
 
-    @Value("${trainers.user.password}")
+    @Value("${trainers.service.user.password}")
     private String password;
 
     @Bean
