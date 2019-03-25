@@ -1,6 +1,6 @@
 package com.miage.altea.tp.battle_api.service;
 
-import com.miage.altea.tp.battle_api.Utils.BattleUtilities;
+import com.miage.altea.tp.battle_api.utils.BattleUtilities;
 import com.miage.altea.tp.battle_api.bo.PokemonType;
 import com.miage.altea.tp.battle_api.bo.Trainer;
 import org.springframework.beans.factory.annotation.Autowired;

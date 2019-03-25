@@ -1,4 +1,4 @@
-package com.miage.altea.tp.battle_api.Utils;
+package com.miage.altea.tp.battle_api.utils;
 
 import org.springframework.context.i18n.LocaleContextHolder;
 
